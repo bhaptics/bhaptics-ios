@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "bhaptics-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bhaptics/bhaptics-ios.git",
+      "state" : {
+        "revision" : "42853d61304b7c02e10d98054809da7c329cd069",
+        "version" : "0.1.1"
+      }
+    }
+  ],
+  "version" : 2
+}
