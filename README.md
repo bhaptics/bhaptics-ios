@@ -3,6 +3,8 @@
 This SDK is under beta process so API might change rapidly without notifications.
 We will soon add other features which are supported by other SDK(Unity/UE4)
 
+tested under XCode 14.1, Swift 5.7 
+
 ## Features
 * Pair/Unpair bHaptics devices
 * Control vibration actuator with position and motor values.
