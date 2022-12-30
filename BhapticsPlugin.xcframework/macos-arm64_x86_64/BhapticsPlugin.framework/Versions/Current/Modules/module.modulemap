@@ -6,6 +6,6 @@ framework module BhapticsPlugin {
 }
 
 module BhapticsPlugin.Swift {
-  header "BhapticsPlugin-Swift.h"
-  requires objc
+    header "BhapticsPlugin-Swift.h"
+    requires objc
 }
