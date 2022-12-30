@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.5.2
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -6,18 +6,18 @@ import PackageDescription
 let package = Package(
     name: "Bhaptics",
     platforms: [
-        .macOS(.v10_14), .iOS(.v13)
+        .macOS(.v10_15), .iOS(.v13)
     ],
     products: [
         .library(
             name: "Bhaptics",
-            targets: ["Bhaptics", "BhapticsPlugin"]),
+            targets: ["BhapticsExample", "BhapticsPlugin"]),
     ],
     dependencies: [
     ],
     targets: [
         .target(
-            name: "Bhaptics",
+            name: "BhapticsExample",
             dependencies: ["BhapticsPlugin"]
         ),
         .binaryTarget(

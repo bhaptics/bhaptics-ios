@@ -11,7 +11,7 @@
 		86FA40FC295D576A0020ABC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FA40FB295D576A0020ABC5 /* ContentView.swift */; };
 		86FA40FE295D576B0020ABC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FA40FD295D576B0020ABC5 /* Assets.xcassets */; };
 		86FA4102295D576B0020ABC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FA4101295D576B0020ABC5 /* Preview Assets.xcassets */; };
-		86FA410A295D579E0020ABC5 /* Bhaptics in Frameworks */ = {isa = PBXBuildFile; productRef = 86FA4109295D579E0020ABC5 /* Bhaptics */; };
+		86FA4114295EA4210020ABC5 /* Bhaptics in Frameworks */ = {isa = PBXBuildFile; productRef = 86FA4113295EA4210020ABC5 /* Bhaptics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86FA410A295D579E0020ABC5 /* Bhaptics in Frameworks */,
+				86FA4114295EA4210020ABC5 /* Bhaptics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 			);
 			name = BhapticsSample;
 			packageProductDependencies = (
-				86FA4109295D579E0020ABC5 /* Bhaptics */,
+				86FA4113295EA4210020ABC5 /* Bhaptics */,
 			);
 			productName = BhapticsSample;
 			productReference = 86FA40F6295D576A0020ABC5 /* BhapticsSample.app */;
@@ -119,7 +119,7 @@
 			);
 			mainGroup = 86FA40ED295D576A0020ABC5;
 			packageReferences = (
-				86FA4108295D579E0020ABC5 /* XCRemoteSwiftPackageReference "bhaptics-ios" */,
+				86FA4112295EA4210020ABC5 /* XCRemoteSwiftPackageReference "bhaptics-ios" */,
 			);
 			productRefGroup = 86FA40F7295D576A0020ABC5 /* Products */;
 			projectDirPath = "";
@@ -291,7 +291,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.sample.BhapticsSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -330,7 +330,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.sample.BhapticsSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -366,20 +366,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		86FA4108295D579E0020ABC5 /* XCRemoteSwiftPackageReference "bhaptics-ios" */ = {
+		86FA4112295EA4210020ABC5 /* XCRemoteSwiftPackageReference "bhaptics-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bhaptics/bhaptics-ios.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		86FA4109295D579E0020ABC5 /* Bhaptics */ = {
+		86FA4113295EA4210020ABC5 /* Bhaptics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 86FA4108295D579E0020ABC5 /* XCRemoteSwiftPackageReference "bhaptics-ios" */;
+			package = 86FA4112295EA4210020ABC5 /* XCRemoteSwiftPackageReference "bhaptics-ios" */;
 			productName = Bhaptics;
 		};
 /* End XCSwiftPackageProductDependency section */

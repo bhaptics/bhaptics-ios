@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/bhaptics/bhaptics-ios.git",
       "state" : {
-        "revision" : "42853d61304b7c02e10d98054809da7c329cd069",
-        "version" : "0.1.1"
+        "branch" : "main",
+        "revision" : "265e10d6269781d4647322e99de9f18ec4294826"
       }
     }
   ],
