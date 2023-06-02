@@ -31,8 +31,9 @@ kit.unpair(device: device)
 ```
 let position = BhapticsPosition.Vest
 let motors = [Int](repeating: intensity, count: 40)
+let millis = 1000 // for 1 second
 
-kit.playMotors(position: position, arr: motors)
+kit.playMotors(position: position, arr: motors, durationMillis: millis)
 
 kit.turnOffMotors()
 ```

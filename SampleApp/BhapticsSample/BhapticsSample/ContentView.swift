@@ -17,7 +17,9 @@ struct ContentView: View {
 
     @State var position = PositionOptions[0]
     @State var intensityText = "100"
+    @State var millisText = "1000"
     @State var intensity = 100
+    @State var millis = 100
 
     func toggleScan() {
         viewModel.toggleScanning()
@@ -38,6 +40,8 @@ struct ContentView: View {
 
                 TextField("Input", text: $intensityText)
                         .frame(minWidth: 60)
+                TextField("Millis", text: $millisText)
+                        .frame(minWidth: 60)
                 Button("Play") {
                     let intVal = Int(intensityText)
                     if (intVal == nil) {
@@ -45,12 +49,18 @@ struct ContentView: View {
                     } else {
                         intensity = min(100, max(0, intVal!))
                     }
+                    let intValMillis = Int(millisText)
+                    if (intValMillis == nil) {
+                        millis = 1000
+                    } else {
+                        millis = min(10000, max(40, intVal!))
+                    }
                     intensityText = String(intensity)
 
 //                    let motors = [Int](repeating: intensity, count: 20)
                     let motors = [Int](repeating: intensity, count: 40)
 
-                    viewModel.kit.playMotors(position: position, arr: motors)
+                    viewModel.kit.playMotors(position: position, arr: motors, duratioinMillis: millis)
                 
                 }
                         .border(Color.gray)
