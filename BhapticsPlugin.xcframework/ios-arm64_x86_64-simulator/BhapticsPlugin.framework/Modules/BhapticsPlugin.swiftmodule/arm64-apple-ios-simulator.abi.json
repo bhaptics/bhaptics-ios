@@ -1076,7 +1076,7 @@
           {
             "kind": "Function",
             "name": "playMotors",
-            "printedName": "playMotors(position:arr:)",
+            "printedName": "playMotors(position:arr:duratioinMillis:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1102,11 +1102,17 @@
                   }
                 ],
                 "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               }
             ],
             "declKind": "Func",
-            "usr": "s:14BhapticsPlugin0A3KitC10playMotors8position3arryAA0A8PositionO_SaySiGtF",
-            "mangledName": "$s14BhapticsPlugin0A3KitC10playMotors8position3arryAA0A8PositionO_SaySiGtF",
+            "usr": "s:14BhapticsPlugin0A3KitC10playMotors8position3arr15duratioinMillisyAA0A8PositionO_SaySiGSitF",
+            "mangledName": "$s14BhapticsPlugin0A3KitC10playMotors8position3arr15duratioinMillisyAA0A8PositionO_SaySiGSitF",
             "moduleName": "BhapticsPlugin",
             "declAttributes": [
               "AccessControl"
@@ -1309,6 +1315,53 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hapticPlayer",
+            "printedName": "hapticPlayer(_:position:motors:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HapticPlayer",
+                "printedName": "BhapticsPlugin.HapticPlayer",
+                "usr": "s:14BhapticsPlugin12HapticPlayerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BhapticsPosition",
+                "printedName": "BhapticsPlugin.BhapticsPosition",
+                "usr": "s:14BhapticsPlugin0A8PositionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BhapticsPlugin0A3KitC12hapticPlayer_8position6motorsyAA06HapticE0C_AA0A8PositionOSaySiGtF",
+            "mangledName": "$s14BhapticsPlugin0A3KitC12hapticPlayer_8position6motorsyAA06HapticE0C_AA0A8PositionOSaySiGtF",
+            "moduleName": "BhapticsPlugin",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -1325,6 +1378,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "HapticPlayerDelegate",
+            "printedName": "HapticPlayerDelegate",
+            "usr": "s:14BhapticsPlugin20HapticPlayerDelegateP",
+            "mangledName": "$s14BhapticsPlugin20HapticPlayerDelegateP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1374,6 +1434,16 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BhapticsPlugin",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -1674,6 +1744,91 @@
                   "Final"
                 ],
                 "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "battery",
+            "printedName": "battery",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BhapticsPlugin0A6DeviceC7batterySivp",
+            "mangledName": "$s14BhapticsPlugin0A6DeviceC7batterySivp",
+            "moduleName": "BhapticsPlugin",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BhapticsPlugin0A6DeviceC7batterySivg",
+                "mangledName": "$s14BhapticsPlugin0A6DeviceC7batterySivg",
+                "moduleName": "BhapticsPlugin",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BhapticsPlugin0A6DeviceC7batterySivs",
+                "mangledName": "$s14BhapticsPlugin0A6DeviceC7batterySivs",
+                "moduleName": "BhapticsPlugin",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BhapticsPlugin0A6DeviceC7batterySivM",
+                "mangledName": "$s14BhapticsPlugin0A6DeviceC7batterySivM",
+                "moduleName": "BhapticsPlugin",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -2099,13 +2254,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:14BhapticsPlugin0A6DeviceC7turnOffyyF",
-            "mangledName": "$s14BhapticsPlugin0A6DeviceC7turnOffyyF",
+            "usr": "s:14BhapticsPlugin0A6DeviceC7turnOffSbyF",
+            "mangledName": "$s14BhapticsPlugin0A6DeviceC7turnOffSbyF",
             "moduleName": "BhapticsPlugin",
             "declAttributes": [
               "AccessControl"
@@ -2119,8 +2275,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -2138,8 +2295,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14BhapticsPlugin0A6DeviceC9playMotor3arrySaySiG_tF",
-            "mangledName": "$s14BhapticsPlugin0A6DeviceC9playMotor3arrySaySiG_tF",
+            "usr": "s:14BhapticsPlugin0A6DeviceC9playMotor3arrSbSaySiG_tF",
+            "mangledName": "$s14BhapticsPlugin0A6DeviceC9playMotor3arrSbSaySiG_tF",
             "moduleName": "BhapticsPlugin",
             "declAttributes": [
               "AccessControl"
@@ -2308,6 +2465,56 @@
             "mangledName": "$s14BhapticsPlugin0A6DeviceC10peripheral_16didWriteValueFor5errorySo12CBPeripheralC_So16CBCharacteristicCs5Error_pSgtF",
             "moduleName": "BhapticsPlugin",
             "objc_name": "peripheral:didWriteValueForCharacteristic:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peripheral",
+            "printedName": "peripheral(_:didUpdateValueFor:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCharacteristic",
+                "printedName": "CoreBluetooth.CBCharacteristic",
+                "usr": "c:objc(cs)CBCharacteristic"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BhapticsPlugin@objc(cs)BhapticsDevice(im)peripheral:didUpdateValueForCharacteristic:error:",
+            "mangledName": "$s14BhapticsPlugin0A6DeviceC10peripheral_17didUpdateValueFor5errorySo12CBPeripheralC_So16CBCharacteristicCs5Error_pSgtF",
+            "moduleName": "BhapticsPlugin",
+            "objc_name": "peripheral:didUpdateValueForCharacteristic:error:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -2576,6 +2783,69 @@
         "declAttributes": [
           "AccessControl"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BhapticsPlugin",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BhapticsPlugin",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Logger",
+        "printedName": "Logger",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BhapticsPlugin6LoggerC3log7messageySS_tFZ",
+            "mangledName": "$s14BhapticsPlugin6LoggerC3log7messageySS_tFZ",
+            "moduleName": "BhapticsPlugin",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14BhapticsPlugin6LoggerC",
+        "mangledName": "$s14BhapticsPlugin6LoggerC",
+        "moduleName": "BhapticsPlugin",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
       },
       {
         "kind": "Import",
@@ -2861,6 +3131,212 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BhapticsPlugin",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BhapticsPlugin",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HapticPlayerDelegate",
+        "printedName": "HapticPlayerDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "hapticPlayer",
+            "printedName": "hapticPlayer(_:position:motors:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HapticPlayer",
+                "printedName": "BhapticsPlugin.HapticPlayer",
+                "usr": "s:14BhapticsPlugin12HapticPlayerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BhapticsPosition",
+                "printedName": "BhapticsPlugin.BhapticsPosition",
+                "usr": "s:14BhapticsPlugin0A8PositionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BhapticsPlugin20HapticPlayerDelegateP06hapticD0_8position6motorsyAA0cD0C_AA0A8PositionOSaySiGtF",
+            "mangledName": "$s14BhapticsPlugin20HapticPlayerDelegateP06hapticD0_8position6motorsyAA0cD0C_AA0A8PositionOSaySiGtF",
+            "moduleName": "BhapticsPlugin",
+            "genericSig": "<τ_0_0 where τ_0_0 : BhapticsPlugin.HapticPlayerDelegate>",
+            "sugared_genericSig": "<Self where Self : BhapticsPlugin.HapticPlayerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:14BhapticsPlugin20HapticPlayerDelegateP",
+        "mangledName": "$s14BhapticsPlugin20HapticPlayerDelegateP",
+        "moduleName": "BhapticsPlugin",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HapticPlayer",
+        "printedName": "HapticPlayer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BhapticsPlugin.HapticPlayerDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HapticPlayerDelegate",
+                    "printedName": "BhapticsPlugin.HapticPlayerDelegate",
+                    "usr": "s:14BhapticsPlugin20HapticPlayerDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BhapticsPlugin12HapticPlayerC8delegateAA0cD8Delegate_pSgvp",
+            "mangledName": "$s14BhapticsPlugin12HapticPlayerC8delegateAA0cD8Delegate_pSgvp",
+            "moduleName": "BhapticsPlugin",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BhapticsPlugin.HapticPlayerDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HapticPlayerDelegate",
+                        "printedName": "BhapticsPlugin.HapticPlayerDelegate",
+                        "usr": "s:14BhapticsPlugin20HapticPlayerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BhapticsPlugin12HapticPlayerC8delegateAA0cD8Delegate_pSgvg",
+                "mangledName": "$s14BhapticsPlugin12HapticPlayerC8delegateAA0cD8Delegate_pSgvg",
+                "moduleName": "BhapticsPlugin",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BhapticsPlugin.HapticPlayerDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HapticPlayerDelegate",
+                        "printedName": "BhapticsPlugin.HapticPlayerDelegate",
+                        "usr": "s:14BhapticsPlugin20HapticPlayerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BhapticsPlugin12HapticPlayerC8delegateAA0cD8Delegate_pSgvs",
+                "mangledName": "$s14BhapticsPlugin12HapticPlayerC8delegateAA0cD8Delegate_pSgvs",
+                "moduleName": "BhapticsPlugin",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BhapticsPlugin12HapticPlayerC8delegateAA0cD8Delegate_pSgvM",
+                "mangledName": "$s14BhapticsPlugin12HapticPlayerC8delegateAA0cD8Delegate_pSgvM",
+                "moduleName": "BhapticsPlugin",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14BhapticsPlugin12HapticPlayerC",
+        "mangledName": "$s14BhapticsPlugin12HapticPlayerC",
+        "moduleName": "BhapticsPlugin",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
       }
     ],
     "json_format_version": 8
@@ -3030,9 +3506,23 @@
     {
       "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/BhapticsKit.swift",
       "kind": "Array",
-      "offset": 323,
+      "offset": 366,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/Utils\/NumberUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 194,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/Utils\/NumberUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 215,
+      "length": 5,
+      "value": "10000"
     },
     {
       "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/BhapticsPairedStorage.swift",
@@ -3051,28 +3541,49 @@
     {
       "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/BhapticsDevice.swift",
       "kind": "BooleanLiteral",
-      "offset": 408,
+      "offset": 447,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/BhapticsDevice.swift",
       "kind": "BooleanLiteral",
-      "offset": 485,
+      "offset": 524,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/BhapticsDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 526,
+      "offset": 565,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/BhapticsDevice.swift",
       "kind": "BooleanLiteral",
-      "offset": 568,
+      "offset": 607,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/BhapticsDevice.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1872,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/BhapticsDevice.swift",
+      "kind": "Array",
+      "offset": 2563,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/BhapticsDevice.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2648,
       "length": 5,
       "value": "false"
     },
@@ -3086,37 +3597,44 @@
     {
       "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/BhapticsDevice.swift",
       "kind": "Array",
-      "offset": 3425,
+      "offset": 4896,
       "length": 100,
       "value": "[0, 1, 30, 31, 2, 3, 32, 33, 4, 5, 34, 35, 6, 7, 36, 37, 8, 9, 38, 39]"
     },
     {
       "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/BhapticsDevice.swift",
       "kind": "Array",
-      "offset": 3585,
+      "offset": 5056,
       "length": 110,
       "value": "[10, 11, 20, 21, 12, 13, 22, 23, 14, 15, 24, 25, 16, 17, 26, 27, 18, 19, 28, 29]"
     },
     {
       "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/BhapticsDevice.swift",
       "kind": "Array",
-      "offset": 5451,
+      "offset": 6922,
       "length": 95,
       "value": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
     },
     {
       "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/BhapticsDevice.swift",
       "kind": "Array",
-      "offset": 5586,
+      "offset": 7057,
       "length": 135,
       "value": "[100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]"
     },
     {
       "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/BhapticsDevice.swift",
       "kind": "StringLiteral",
-      "offset": 5788,
+      "offset": 7259,
       "length": 38,
       "value": "\"6E40000A-B5A3-F393-E0A9-E50E24DCCA9E\""
+    },
+    {
+      "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/BhapticsDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 7359,
+      "length": 38,
+      "value": "\"6E400008-B5A3-F393-E0A9-E50E24DCCA9E\""
     },
     {
       "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/BhapticsProduct.swift",
@@ -3164,8 +3682,29 @@
       "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/BhapticsProduct.swift",
       "kind": "StringLiteral",
       "offset": 1903,
-      "length": 11936,
-      "value": "\"[\n    {\n        \"name\": \"Tactosy2\",\n        \"nameContains\": \"tactosy2_v3 (l\",\n        \"firmwareService\": \"v4-tactosy2\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"ForearmL\",\n            \"ForearmR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"Tactosy2\",\n        \"nameContains\": \"tactosy2_v3 (r\",\n        \"firmwareService\": \"v4-tactosy2\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"ForearmR\",\n            \"ForearmL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyH\",\n        \"nameContains\": \"tactosyh_v3 (l\",\n        \"firmwareService\": \"v4-tactosyh\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"HandL\",\n            \"HandR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyH\",\n        \"nameContains\": \"tactosyh_v3 (r\",\n        \"firmwareService\": \"v4-tactosyh\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"HandR\",\n            \"HandL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyF\",\n        \"nameContains\": \"tactosyf_v3 (l\",\n        \"firmwareService\": \"v4-tactosyf\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"FootL\",\n            \"FootR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyF\",\n        \"nameContains\": \"tactosyf_v3 (r\",\n        \"firmwareService\": \"v4-tactosyf\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"FootR\",\n            \"FootL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"Tactosy2\",\n        \"nameContains\": \"tactosy2_v3\",\n        \"firmwareService\": \"v4-tactosy2\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"ForearmL\",\n            \"ForearmR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyH\",\n        \"nameContains\": \"tactosyh_v3\",\n        \"firmwareService\": \"v4-tactosyh\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"HandL\",\n            \"HandR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyF\",\n        \"nameContains\": \"tactosyf_v3\",\n        \"firmwareService\": \"v4-tactosyf\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"FootL\",\n            \"FootR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactVisor\",\n        \"nameContains\": \"tactvisor_v\",\n        \"firmwareService\": \"tactvisor\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"Head\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"Tactosy2\",\n        \"nameContains\": \"tactosy2_v2 (l\",\n        \"firmwareService\": \"v3-tactosy2\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"ForearmL\",\n            \"ForearmR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"Tactosy2\",\n        \"nameContains\": \"tactosy2_v2 (r\",\n        \"firmwareService\": \"v3-tactosy2\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"ForearmR\",\n            \"ForearmL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyH\",\n        \"nameContains\": \"tactosyh_v2 (l\",\n        \"firmwareService\": \"v3-tactosyh\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"HandL\",\n            \"HandR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyH\",\n        \"nameContains\": \"tactosyh_v2 (r\",\n        \"firmwareService\": \"v3-tactosyh\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"HandR\",\n            \"HandL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyF\",\n        \"nameContains\": \"tactosyf_v2 (l\",\n        \"firmwareService\": \"v3-tactosyf\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"FootL\",\n            \"FootR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyF\",\n        \"nameContains\": \"tactosyf_v2 (r\",\n        \"firmwareService\": \"v3-tactosyf\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"FootR\",\n            \"FootL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"Tactosy2\",\n        \"nameContains\": \"tactosy2_v2\",\n        \"firmwareService\": \"v3-tactosy2\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"ForearmL\",\n            \"ForearmR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyH\",\n        \"nameContains\": \"tactosyh_v2\",\n        \"firmwareService\": \"v3-tactosyh\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"HandL\",\n            \"HandR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyF\",\n        \"nameContains\": \"tactosyf_v2\",\n        \"firmwareService\": \"v3-tactosyf\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"FootL\",\n            \"FootR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"Tactal\",\n        \"nameContains\": \"tactal_v2\",\n        \"firmwareService\": \"v3-tactal\",\n        \"candidatePositions\": [\n            \"Head\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"Tactosy\",\n        \"nameContains\": \"tactosy_\",\n        \"firmwareService\": \"tactosy-v2\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"ForearmL\",\n            \"ForearmL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"Tactosy2\",\n        \"nameContains\": \"tactosy2_\",\n        \"firmwareService\": \"v2-tactosy2\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"ForearmL\",\n            \"ForearmR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"Tactot\",\n        \"nameContains\": \"tactot_\",\n        \"firmwareService\": \"tactot\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"Vest\"\n        ],\n        \"hasBattery\": false,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"Tactot2\",\n        \"nameContains\": \"tactot2_\",\n        \"firmwareService\": \"tactot2\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"Vest\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"Tactot3\",\n        \"nameContains\": \"tactot3_\",\n        \"firmwareService\": \"v2-tactot3\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"Vest\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"Tactot3\",\n        \"nameContains\": \"tactot_\",\n        \"firmwareService\": \"tactot3\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"Vest\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"TactSuitX40\",\n        \"nameContains\": \"tactsuit\",\n        \"firmwareService\": \"tactsuit_x40\",\n        \"rawValue\": 509,\n        \"candidatePositions\": [\n            \"Vest\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactSuitX16\",\n        \"nameContains\": \"tactsuit\",\n        \"firmwareService\": \"tactsuit_x16\",\n        \"rawValue\": 510,\n        \"candidatePositions\": [\n            \"Vest\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"Tactal\",\n        \"nameContains\": \"tactal_\",\n        \"firmwareService\": \"v2-tactal\",\n        \"candidatePositions\": [\n            \"Head\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"TactGloveL\",\n        \"nameContains\": \"tactglove (l\",\n        \"firmwareService\": \"tactglovel-v1\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"GloveL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactGloveR\",\n        \"nameContains\": \"tactglove (r\",\n        \"firmwareService\": \"tactglover-v1\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"GloveR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactFacial\",\n        \"nameContains\": \"tactfacial_\",\n        \"firmwareService\": \"tactfacial\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"Head\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"TactosyH\",\n        \"nameContains\": \"tactosyh_\",\n        \"firmwareService\": \"v2-tactosyh\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"HandL\",\n            \"HandR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"TactosyF\",\n        \"nameContains\": \"tactosyf_\",\n        \"firmwareService\": \"v2-tactosyf\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"FootL\",\n            \"FootR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"TactThermoHL\",\n        \"nameContains\": \"tactthermohl\",\n        \"firmwareService\": \"\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"HandL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"TactThermoHR\",\n        \"nameContains\": \"tactthermohr\",\n        \"firmwareService\": \"\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"HandR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"TactThermoFL\",\n        \"nameContains\": \"tactthermofl\",\n        \"firmwareService\": \"\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"FootL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"TactThermoFR\",\n        \"nameContains\": \"tactthermofr\",\n        \"firmwareService\": \"\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"FootR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    }\n]\""
+      "length": 11934,
+      "value": "\"[\n    {\n        \"name\": \"Tactosy2\",\n        \"nameContains\": \"tactosy2_v3 (l\",\n        \"firmwareService\": \"v4-tactosy2\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"ForearmL\",\n            \"ForearmR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"Tactosy2\",\n        \"nameContains\": \"tactosy2_v3 (r\",\n        \"firmwareService\": \"v4-tactosy2\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"ForearmR\",\n            \"ForearmL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyH\",\n        \"nameContains\": \"tactosyh_v3 (l\",\n        \"firmwareService\": \"v4-tactosyh\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"HandL\",\n            \"HandR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyH\",\n        \"nameContains\": \"tactosyh_v3 (r\",\n        \"firmwareService\": \"v4-tactosyh\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"HandR\",\n            \"HandL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyF\",\n        \"nameContains\": \"tactosyf_v3 (l\",\n        \"firmwareService\": \"v4-tactosyf\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"FootL\",\n            \"FootR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyF\",\n        \"nameContains\": \"tactosyf_v3 (r\",\n        \"firmwareService\": \"v4-tactosyf\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"FootR\",\n            \"FootL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"Tactosy2\",\n        \"nameContains\": \"tactosy2_v3\",\n        \"firmwareService\": \"v4-tactosy2\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"ForearmL\",\n            \"ForearmR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyH\",\n        \"nameContains\": \"tactosyh_v3\",\n        \"firmwareService\": \"v4-tactosyh\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"HandL\",\n            \"HandR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyF\",\n        \"nameContains\": \"tactosyf_v3\",\n        \"firmwareService\": \"v4-tactosyf\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"FootL\",\n            \"FootR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactVisor\",\n        \"nameContains\": \"tactvisor\",\n        \"firmwareService\": \"tactvisor\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"Head\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"Tactosy2\",\n        \"nameContains\": \"tactosy2_v2 (l\",\n        \"firmwareService\": \"v3-tactosy2\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"ForearmL\",\n            \"ForearmR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"Tactosy2\",\n        \"nameContains\": \"tactosy2_v2 (r\",\n        \"firmwareService\": \"v3-tactosy2\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"ForearmR\",\n            \"ForearmL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyH\",\n        \"nameContains\": \"tactosyh_v2 (l\",\n        \"firmwareService\": \"v3-tactosyh\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"HandL\",\n            \"HandR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyH\",\n        \"nameContains\": \"tactosyh_v2 (r\",\n        \"firmwareService\": \"v3-tactosyh\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"HandR\",\n            \"HandL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyF\",\n        \"nameContains\": \"tactosyf_v2 (l\",\n        \"firmwareService\": \"v3-tactosyf\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"FootL\",\n            \"FootR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyF\",\n        \"nameContains\": \"tactosyf_v2 (r\",\n        \"firmwareService\": \"v3-tactosyf\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"FootR\",\n            \"FootL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"Tactosy2\",\n        \"nameContains\": \"tactosy2_v2\",\n        \"firmwareService\": \"v3-tactosy2\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"ForearmL\",\n            \"ForearmR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyH\",\n        \"nameContains\": \"tactosyh_v2\",\n        \"firmwareService\": \"v3-tactosyh\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"HandL\",\n            \"HandR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactosyF\",\n        \"nameContains\": \"tactosyf_v2\",\n        \"firmwareService\": \"v3-tactosyf\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"FootL\",\n            \"FootR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"Tactal\",\n        \"nameContains\": \"tactal_v2\",\n        \"firmwareService\": \"v3-tactal\",\n        \"candidatePositions\": [\n            \"Head\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"Tactosy\",\n        \"nameContains\": \"tactosy_\",\n        \"firmwareService\": \"tactosy-v2\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"ForearmL\",\n            \"ForearmL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"Tactosy2\",\n        \"nameContains\": \"tactosy2_\",\n        \"firmwareService\": \"v2-tactosy2\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"ForearmL\",\n            \"ForearmR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"Tactot\",\n        \"nameContains\": \"tactot_\",\n        \"firmwareService\": \"tactot\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"Vest\"\n        ],\n        \"hasBattery\": false,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"Tactot2\",\n        \"nameContains\": \"tactot2_\",\n        \"firmwareService\": \"tactot2\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"Vest\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"Tactot3\",\n        \"nameContains\": \"tactot3_\",\n        \"firmwareService\": \"v2-tactot3\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"Vest\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"Tactot3\",\n        \"nameContains\": \"tactot_\",\n        \"firmwareService\": \"tactot3\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"Vest\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"TactSuitX40\",\n        \"nameContains\": \"tactsuit\",\n        \"firmwareService\": \"tactsuit_x40\",\n        \"rawValue\": 509,\n        \"candidatePositions\": [\n            \"Vest\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactSuitX16\",\n        \"nameContains\": \"tactsuit\",\n        \"firmwareService\": \"tactsuit_x16\",\n        \"rawValue\": 510,\n        \"candidatePositions\": [\n            \"Vest\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"Tactal\",\n        \"nameContains\": \"tactal_\",\n        \"firmwareService\": \"v2-tactal\",\n        \"candidatePositions\": [\n            \"Head\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"TactGloveL\",\n        \"nameContains\": \"tactglove (l\",\n        \"firmwareService\": \"tactglovel-v1\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"GloveL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactGloveR\",\n        \"nameContains\": \"tactglove (r\",\n        \"firmwareService\": \"tactglover-v1\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"GloveR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": true\n    },\n    {\n        \"name\": \"TactFacial\",\n        \"nameContains\": \"tactfacial_\",\n        \"firmwareService\": \"tactfacial\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"Head\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"TactosyH\",\n        \"nameContains\": \"tactosyh_\",\n        \"firmwareService\": \"v2-tactosyh\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"HandL\",\n            \"HandR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"TactosyF\",\n        \"nameContains\": \"tactosyf_\",\n        \"firmwareService\": \"v2-tactosyf\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"FootL\",\n            \"FootR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"TactThermoHL\",\n        \"nameContains\": \"tactthermohl\",\n        \"firmwareService\": \"\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"HandL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"TactThermoHR\",\n        \"nameContains\": \"tactthermohr\",\n        \"firmwareService\": \"\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"HandR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"TactThermoFL\",\n        \"nameContains\": \"tactthermofl\",\n        \"firmwareService\": \"\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"FootL\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    },\n    {\n        \"name\": \"TactThermoFR\",\n        \"nameContains\": \"tactthermofr\",\n        \"firmwareService\": \"\",\n        \"rawValue\": 508,\n        \"candidatePositions\": [\n            \"FootR\"\n        ],\n        \"hasBattery\": true,\n        \"hasDfuRecover\": false\n    }\n]\""
+    },
+    {
+      "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/ThreadSafeQueue.swift",
+      "kind": "Array",
+      "offset": 173,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/ThreadSafeQueue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 240,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/ThreadSafeQueue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 309,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/View\/BhapticsViewModel.swift",
@@ -3180,6 +3719,62 @@
       "offset": 288,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/HapticPlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 187,
+      "length": 2,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/HapticPlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 879,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/HapticPlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1624,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/HapticPlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1702,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/HapticPlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1712,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/HapticPlayer.swift",
+      "kind": "Dictionary",
+      "offset": 1795,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/HapticPlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1826,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/westside\/dev\/sdk\/bhaptics-sdk\/ios\/BhapticsPlugin\/BhapticsPlugin\/HapticPlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1852,
+      "length": 2,
+      "value": "20"
     }
   ]
 }

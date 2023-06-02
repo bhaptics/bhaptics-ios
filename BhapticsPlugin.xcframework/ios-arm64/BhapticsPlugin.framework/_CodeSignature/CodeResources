@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BhapticsPlugin-Swift.h</key>
 		<data>
-		/RZ5aRVie+C2CrLh8CuZibmVuQM=
+		0Ezf4nMtHWoLVERPK81I+r5mLbE=
 		</data>
 		<key>Headers/BhapticsPlugin.h</key>
 		<data>
@@ -14,35 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		O+4Vy3xkKB8nI++eRfd+fbYQ9b0=
+		HoOMJhJRO1FYo1vyv1GpBiLU9xE=
+		</data>
+		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		FZTgaxM1hqr+sidS0mB0CsrniwM=
+		</data>
+		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		u2W2mm/LEmH+GH5TWo/r1nG94+U=
 		</data>
 		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		rWUe7en6YEiUMmKAFAGT5HAttZk=
+		2tmXM/3Zkudege0UR2XilKV2jUU=
 		</data>
 		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		4DtB33wXp7Jk1N4sALqVPnqgHX4=
+		u2W2mm/LEmH+GH5TWo/r1nG94+U=
 		</data>
 		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		RaTLv4paZxYhBSq1FiPpeycOJXA=
-		</data>
-		<key>Modules/BhapticsPlugin.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		rWUe7en6YEiUMmKAFAGT5HAttZk=
-		</data>
-		<key>Modules/BhapticsPlugin.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		4DtB33wXp7Jk1N4sALqVPnqgHX4=
-		</data>
-		<key>Modules/BhapticsPlugin.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		RaTLv4paZxYhBSq1FiPpeycOJXA=
+		SEb15hkOBLO9GEpIOvSzPwSJRyA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		RLO+ENA3BOcjPriDzubLEmCGiSg=
+		LCZ+Z46Dt7I7arMSvslgJ8CctZQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C2f/4UMrV6zyTg8mpBM3WCA3gX0v2uQOarjsVA/Q1ds=
+			wRBciYQ+/fjzuAypR9ihnAET8cCXYJunDfjcUO8OZWs=
 			</data>
 		</dict>
 		<key>Headers/BhapticsPlugin.h</key>
@@ -61,53 +57,46 @@
 			spqM94MjbEGPIftpWpZ1AXvTAJqkhgJ+eGJZ6X5bepY=
 			</data>
 		</dict>
+		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Z4MHCYBAvXMCOlua9t9lvHzVFAzIRl9nfPf77+DVRPY=
+			</data>
+		</dict>
+		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0AfF/ClJUsq5GvaQ90zBmmzhjJawxK+xvyphGKz7iqc=
+			</data>
+		</dict>
 		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			072nxsyKeMRAhuKf28rzpen4zB//EA8VGnw3xFQB9w0=
+			7fL65ofGZ1fi/uY19LBRVWRRNq2d0J2aF+qtJRH2GLM=
 			</data>
 		</dict>
 		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			quCrj+8RC4JTKGIjVEoDmj/RL3PP4R1U6g9hxQkGFJY=
+			0AfF/ClJUsq5GvaQ90zBmmzhjJawxK+xvyphGKz7iqc=
 			</data>
 		</dict>
 		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gZgNwe6y5nVIC69AGf7AL26HsgikxgQXzE79Xe3EOEc=
-			</data>
-		</dict>
-		<key>Modules/BhapticsPlugin.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			072nxsyKeMRAhuKf28rzpen4zB//EA8VGnw3xFQB9w0=
-			</data>
-		</dict>
-		<key>Modules/BhapticsPlugin.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			quCrj+8RC4JTKGIjVEoDmj/RL3PP4R1U6g9hxQkGFJY=
-			</data>
-		</dict>
-		<key>Modules/BhapticsPlugin.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			gZgNwe6y5nVIC69AGf7AL26HsgikxgQXzE79Xe3EOEc=
+			NAQw8txa2vVgVhfwaoMtf+FVugzExBBku8xJAgH7T+I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rL/ujVBQlbx0Gcg86zPb5V/HcT1mF487niGJ2QfIyZ8=
+			nI+VPcREIOVL28jcxGzRukp+vA90uFwXi6QhcZex8lU=
 			</data>
 		</dict>
 	</dict>

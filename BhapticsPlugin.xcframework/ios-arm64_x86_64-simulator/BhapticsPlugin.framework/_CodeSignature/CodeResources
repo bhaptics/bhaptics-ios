@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BhapticsPlugin-Swift.h</key>
 		<data>
-		/AGER/aVqJDLktyZGNENRfTNbR0=
+		hiY+ZGnDdWcFE51byonHJT9/zoo=
 		</data>
 		<key>Headers/BhapticsPlugin.h</key>
 		<data>
@@ -14,59 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iizR7h3/dsvu7gBEvstS//sjD08=
+		V8Ym0JufAGFAGSFZMIUbb6z7LOs=
+		</data>
+		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		FZTgaxM1hqr+sidS0mB0CsrniwM=
+		</data>
+		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		P+C5o5JTCjzLqm9tG/sPzYr+nNo=
 		</data>
 		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		2X5H44sxUpDlNOjNfd6i+eoKK2A=
+		HburLGMyIUBI0U2lrqb0ed5+wVc=
 		</data>
 		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		K/0hYlp/csLJH9e3maHX8vz7CUY=
+		P+C5o5JTCjzLqm9tG/sPzYr+nNo=
 		</data>
 		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		g7ah7A2asilw1XutrdT7ZmNWu0Q=
+		gZOq4eIKcK4PCxJ8z38gOmnaYIM=
 		</data>
-		<key>Modules/BhapticsPlugin.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/BhapticsPlugin.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		2X5H44sxUpDlNOjNfd6i+eoKK2A=
+		FZTgaxM1hqr+sidS0mB0CsrniwM=
 		</data>
-		<key>Modules/BhapticsPlugin.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/BhapticsPlugin.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		K/0hYlp/csLJH9e3maHX8vz7CUY=
-		</data>
-		<key>Modules/BhapticsPlugin.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		g7ah7A2asilw1XutrdT7ZmNWu0Q=
+		VzjiZKrzWGRjWtzLDYRt2+9BfoA=
 		</data>
 		<key>Modules/BhapticsPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		H9hGILalFkkCbkL+36/dC2LpKrE=
+		t1dkIYDe9vO0sy7o+K+g88WYk0E=
 		</data>
 		<key>Modules/BhapticsPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ujjGivnLxq+kpnp3dKLZETs8Mmw=
+		VzjiZKrzWGRjWtzLDYRt2+9BfoA=
 		</data>
 		<key>Modules/BhapticsPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		J05OrsoQI58MIY/MZelpDi2zCLI=
-		</data>
-		<key>Modules/BhapticsPlugin.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		H9hGILalFkkCbkL+36/dC2LpKrE=
-		</data>
-		<key>Modules/BhapticsPlugin.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		ujjGivnLxq+kpnp3dKLZETs8Mmw=
-		</data>
-		<key>Modules/BhapticsPlugin.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		J05OrsoQI58MIY/MZelpDi2zCLI=
+		2EQxkwlny0meP24iCuKDJXc594Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		RLO+ENA3BOcjPriDzubLEmCGiSg=
+		LCZ+Z46Dt7I7arMSvslgJ8CctZQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -75,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aomekautHeXn/U5mgJbS0/cNBaPUlaIeBJ/eXyDLo9Y=
+			qODR0tAk3DDRnCiNa/i1DCX1o6go/4tGeG2hPGJHIkM=
 			</data>
 		</dict>
 		<key>Headers/BhapticsPlugin.h</key>
@@ -85,95 +77,81 @@
 			spqM94MjbEGPIftpWpZ1AXvTAJqkhgJ+eGJZ6X5bepY=
 			</data>
 		</dict>
+		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Z4MHCYBAvXMCOlua9t9lvHzVFAzIRl9nfPf77+DVRPY=
+			</data>
+		</dict>
+		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LqIOMcD6+9It2E8ul22UndHP/kLtNmwCHAu3OhycEfk=
+			</data>
+		</dict>
 		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cRQkfOaLaGAIQBnNZSV46JtkBLdoNKWalz+adpd1eWU=
+			HNriKQyKiHSS5tP43AS5o+e+ytWJPu3OaGqnX9Tqxq4=
 			</data>
 		</dict>
 		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EgETC0aijZ5f9EZA3CA1Q3kMdXU5AxBYI5xH7HXGtlI=
+			LqIOMcD6+9It2E8ul22UndHP/kLtNmwCHAu3OhycEfk=
 			</data>
 		</dict>
 		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jl/79zww1qAImW5fRUr1U2Pt3n2+pBwN9zcMFTYu+eQ=
+			A5Z26Tj3FQdTu6BJZmbes7GcEBza15vETX7WrpxW5YE=
 			</data>
 		</dict>
-		<key>Modules/BhapticsPlugin.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/BhapticsPlugin.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cRQkfOaLaGAIQBnNZSV46JtkBLdoNKWalz+adpd1eWU=
+			Z4MHCYBAvXMCOlua9t9lvHzVFAzIRl9nfPf77+DVRPY=
 			</data>
 		</dict>
-		<key>Modules/BhapticsPlugin.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/BhapticsPlugin.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EgETC0aijZ5f9EZA3CA1Q3kMdXU5AxBYI5xH7HXGtlI=
-			</data>
-		</dict>
-		<key>Modules/BhapticsPlugin.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Jl/79zww1qAImW5fRUr1U2Pt3n2+pBwN9zcMFTYu+eQ=
+			EURa4++uBZV6BAkwtsxAWzwACcj4nX6DzsqqQW780E8=
 			</data>
 		</dict>
 		<key>Modules/BhapticsPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PqYhwX0+4MZZXJBxPNBJs/M+dEkYvCAM5auoVz/rtIM=
+			EMcLAJs8A69eG/inh6RkCo2nGI0aIH42UbSMv9NeqJg=
 			</data>
 		</dict>
 		<key>Modules/BhapticsPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CuvFC4vzzSMAqLVa3Z35PzFVZyN7BaVWp8V6GEehvGE=
+			EURa4++uBZV6BAkwtsxAWzwACcj4nX6DzsqqQW780E8=
 			</data>
 		</dict>
 		<key>Modules/BhapticsPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+rsgq46+SOjOnxHbFxQCxyi+Xlf6sZcenZVh6ahltrw=
-			</data>
-		</dict>
-		<key>Modules/BhapticsPlugin.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			PqYhwX0+4MZZXJBxPNBJs/M+dEkYvCAM5auoVz/rtIM=
-			</data>
-		</dict>
-		<key>Modules/BhapticsPlugin.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CuvFC4vzzSMAqLVa3Z35PzFVZyN7BaVWp8V6GEehvGE=
-			</data>
-		</dict>
-		<key>Modules/BhapticsPlugin.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			+rsgq46+SOjOnxHbFxQCxyi+Xlf6sZcenZVh6ahltrw=
+			g7cyYHGzFGPOLBj+htS7E/o1mb3AQnJx0W1oXmvXdb4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rL/ujVBQlbx0Gcg86zPb5V/HcT1mF487niGJ2QfIyZ8=
+			nI+VPcREIOVL28jcxGzRukp+vA90uFwXi6QhcZex8lU=
 			</data>
 		</dict>
 	</dict>

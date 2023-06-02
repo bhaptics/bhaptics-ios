@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		CiLF7i7gvhxgwKtR/4mGcOlKE0g=
+		KtM3xZyCqkRPzD1tJw8BadUj10Y=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -15,7 +15,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aomekautHeXn/U5mgJbS0/cNBaPUlaIeBJ/eXyDLo9Y=
+			qODR0tAk3DDRnCiNa/i1DCX1o6go/4tGeG2hPGJHIkM=
 			</data>
 		</dict>
 		<key>Headers/BhapticsPlugin.h</key>
@@ -25,102 +25,88 @@
 			spqM94MjbEGPIftpWpZ1AXvTAJqkhgJ+eGJZ6X5bepY=
 			</data>
 		</dict>
+		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-macos.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Z4MHCYBAvXMCOlua9t9lvHzVFAzIRl9nfPf77+DVRPY=
+			</data>
+		</dict>
+		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			N65KKry8iwmTPR4a46eaPexXrcF1PMKlgR+CM+s4PEI=
+			</data>
+		</dict>
 		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fZMWw6cKX65azaZhuV1G4j8dWbAn6kV4S+8GzkQlIjc=
+			VQWLPa42DVqFavJUkXLiRxxmdqrneGn2dOAVKp00xNg=
 			</data>
 		</dict>
 		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jQgeE/DogvcDyjhSljbWghjSa8CEDEvcxhC8pTuvCgE=
+			N65KKry8iwmTPR4a46eaPexXrcF1PMKlgR+CM+s4PEI=
 			</data>
 		</dict>
 		<key>Modules/BhapticsPlugin.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZPwlLvXN/VNC8X2kIC68K7MN64B96ZDQyDvkYP211GQ=
+			1q7rO5WLM2rjWXFOCZle1FxZuz4PNkOIVKdXecbR+Ik=
 			</data>
 		</dict>
-		<key>Modules/BhapticsPlugin.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/BhapticsPlugin.swiftmodule/x86_64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fZMWw6cKX65azaZhuV1G4j8dWbAn6kV4S+8GzkQlIjc=
+			Z4MHCYBAvXMCOlua9t9lvHzVFAzIRl9nfPf77+DVRPY=
 			</data>
 		</dict>
-		<key>Modules/BhapticsPlugin.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/BhapticsPlugin.swiftmodule/x86_64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jQgeE/DogvcDyjhSljbWghjSa8CEDEvcxhC8pTuvCgE=
-			</data>
-		</dict>
-		<key>Modules/BhapticsPlugin.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZPwlLvXN/VNC8X2kIC68K7MN64B96ZDQyDvkYP211GQ=
+			KT2mq9MPmoWCh0cBGFFfC3tEWqyR5PH7K8KOY8EdQZo=
 			</data>
 		</dict>
 		<key>Modules/BhapticsPlugin.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7/CxZmSHxNVDZCIdqqa9fbBouzN7xu5NkW54XftW120=
+			bJWB+A5x4C7IuSuoFu20Av5mEb4NwG0yWSn8yKSyLgw=
 			</data>
 		</dict>
 		<key>Modules/BhapticsPlugin.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EcYn0d+Lzoa6SHxLXw7S9FEvYh/8nPf974ro1b9NOEI=
+			KT2mq9MPmoWCh0cBGFFfC3tEWqyR5PH7K8KOY8EdQZo=
 			</data>
 		</dict>
 		<key>Modules/BhapticsPlugin.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			upfmgElqPx0zh57Q58nk7l6uEVxynmL2LY1Y69jyios=
-			</data>
-		</dict>
-		<key>Modules/BhapticsPlugin.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7/CxZmSHxNVDZCIdqqa9fbBouzN7xu5NkW54XftW120=
-			</data>
-		</dict>
-		<key>Modules/BhapticsPlugin.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EcYn0d+Lzoa6SHxLXw7S9FEvYh/8nPf974ro1b9NOEI=
-			</data>
-		</dict>
-		<key>Modules/BhapticsPlugin.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			upfmgElqPx0zh57Q58nk7l6uEVxynmL2LY1Y69jyios=
+			vOrcj8mMMWjXm3jwk6BOFv7gN1dhGgVv+MWUtBPXD/M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rL/ujVBQlbx0Gcg86zPb5V/HcT1mF487niGJ2QfIyZ8=
+			nI+VPcREIOVL28jcxGzRukp+vA90uFwXi6QhcZex8lU=
 			</data>
 		</dict>
 		<key>Resources/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OeGRcZu9q44+aHftUgvCR62ygVFmKaZoJdydFn1LhvA=
+			3d2aMk8nPN38PisQhyijal0IE8oLxaE5Hf3l+0ueMGg=
 			</data>
 		</dict>
 	</dict>
