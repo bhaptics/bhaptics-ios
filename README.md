@@ -8,7 +8,7 @@ Swift Package for controlling bHaptics devices (TactSuit, TactGlove, TactVisor, 
 |---|---|---|
 | iOS | 13.0 | Bluetooth LE (direct) |
 | visionOS | 2.0 | Bluetooth LE (direct) |
-| macOS | 10.15 | [bHaptics Player](https://www.bhaptics.com/support/download) running on the same Mac |
+| macOS | 10.15 | [bHaptics Player](https://www.bhaptics.com/software/player/?type=pcplayer) running on the same Mac |
 
 * Xcode 16 or later is required.
 * The package ships a prebuilt `BhapticsPlugin.xcframework` with `ios-arm64`, `ios-arm64_x86_64-simulator`, `xros-arm64`, `xros-arm64_x86_64-simulator`, and `macos-arm64_x86_64` slices. The binary is downloaded from the GitHub release that matches the package version.
@@ -37,21 +37,14 @@ Then `import BhapticsPlugin` in your code.
 
 Create an app and deploy its haptic events on the [bHaptics Developer Portal](https://developer.bhaptics.com/). See [App and Event](https://docs.bhaptics.com/portal/app-and-event) for details. The App ID and API key are passed to `BhapticsKit.initialize`.
 
-### Info.plist (iOS / visionOS / macOS)
+### Info.plist (iOS / visionOS)
 
-bHaptics devices are Bluetooth peripherals, so both keys are required:
+The SDK talks to bHaptics devices over Bluetooth LE, so add [NSBluetoothAlwaysUsageDescription](https://developer.apple.com/documentation/bundleresources/information_property_list/nsbluetoothalwaysusagedescription) to the app's Info.plist.
 
-* [NSBluetoothAlwaysUsageDescription](https://developer.apple.com/documentation/bundleresources/information_property_list/nsbluetoothalwaysusagedescription)
-* [NSBluetoothPeripheralUsageDescription](https://developer.apple.com/documentation/bundleresources/information_property_list/nsbluetoothperipheralusagedescription)
+### macOS
 
-![Info.plist keys](Assets/img_1.png)
-
-### macOS (Signing & Capabilities > App Sandbox)
-
-* Check **Bluetooth** and **Outgoing Connections (Client)**.
-* Install and run bHaptics Player. `BhapticsKit.initialize` connects to the local Player automatically.
-
-![App Sandbox](Assets/img.png)
+* The SDK does not use Bluetooth on macOS. Devices are driven through bHaptics Player, so install and run it; `BhapticsKit.initialize` connects to the local Player automatically.
+* If the app is sandboxed, check **Outgoing Connections (Client)** under Signing & Capabilities > App Sandbox. No Bluetooth entitlement or usage description is needed.
 
 ## Quick start
 
@@ -102,3 +95,5 @@ extension MyViewModel: BhapticsKitDelegate {
 ## License
 
 Use of the bHaptics SDK is subject to the [bHaptics SDK agreement](https://bhaptics.gitbook.io/license-sdk/). See [LICENSE](LICENSE).
+
+The macOS slice embeds `libbhaptics_library.dylib`, which contains open-source components. Their licenses are listed in [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt). When you ship an app that includes this framework, include that file and ship the framework unmodified; it stays under the bHaptics SDK agreement, not your app's license.
