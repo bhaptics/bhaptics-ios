@@ -1,36 +1,22 @@
-// swift-tools-version: 5.5.2
-// The swift-tools-version declares the minimum version of Swift required to build this package.
+// swift-tools-version: 5.9
 
 import PackageDescription
 
 let package = Package(
     name: "Bhaptics",
     platforms: [
-        .macOS(.v10_15), .iOS(.v13)
+        .iOS(.v13), .macOS(.v10_15), .visionOS("2.0")
     ],
     products: [
         .library(
             name: "Bhaptics",
-            targets: ["BhapticsExample", "BhapticsPlugin"]),
-    ],
-    dependencies: [
+            targets: ["BhapticsPlugin"]),
     ],
     targets: [
-        .target(
-            name: "BhapticsExample",
-            dependencies: ["BhapticsPlugin"]
-        ),
         .binaryTarget(
             name: "BhapticsPlugin",
-            path: "BhapticsPlugin.xcframework"
+            url: "https://github.com/bhaptics/bhaptics-ios/releases/download/1.0.0/BhapticsPlugin.xcframework.zip",
+            checksum: "72723a88488e95be4fd48f347936b2fb3039a0ef6f137a0c6e175db7f4773a3d"
         )
-//        .binaryTarget(
-//            name: "BhapticsPlugin",
-//            url: "https://github.com/westside/apple-bhaptics/raw/main/BhapticsPlugin.zip",
-//            checksum: "2acba9c6ee00e4eb098e67c02d3e3e437f7b0e15cd384212509c0fe3d77eef20"
-//        )
-//        .testTarget(
-//            name: "bHapticsSDKTests",
-//            dependencies: ["BhapticsSDK"]),
     ]
 )

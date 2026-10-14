@@ -9,3 +9,5 @@ DerivedData/
 .netrc
 .idea/
 Build/
+*.xcframework/
+*.xcframework.zip

@@ -7,80 +7,103 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		86FA40FA295D576A0020ABC5 /* BhapticsSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FA40F9295D576A0020ABC5 /* BhapticsSampleApp.swift */; };
-		86FA40FC295D576A0020ABC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FA40FB295D576A0020ABC5 /* ContentView.swift */; };
-		86FA40FE295D576B0020ABC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FA40FD295D576B0020ABC5 /* Assets.xcassets */; };
-		86FA4102295D576B0020ABC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FA4101295D576B0020ABC5 /* Preview Assets.xcassets */; };
-		86FA4114295EA4210020ABC5 /* Bhaptics in Frameworks */ = {isa = PBXBuildFile; productRef = 86FA4113295EA4210020ABC5 /* Bhaptics */; };
+		86FA4055295A89D50020ABC5 /* BhapticsSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FA4054295A89D50020ABC5 /* BhapticsSampleApp.swift */; };
+		86FA4057295A89D50020ABC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FA4056295A89D50020ABC5 /* ContentView.swift */; };
+		C0DE00010000000000000015 /* EventTransformControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00010000000000000016 /* EventTransformControl.swift */; };
+		86FA4059295A89D60020ABC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FA4058295A89D60020ABC5 /* Assets.xcassets */; };
+		86FA405D295A89D60020ABC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FA405C295A89D60020ABC5 /* Preview Assets.xcassets */; };
+		B1A0000000000000000000A3 /* Bhaptics in Frameworks */ = {isa = PBXBuildFile; productRef = B1A0000000000000000000A2 /* Bhaptics */; };
+		F3570FF4F8175E78D3FADE73 /* BhapticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35700ECF89129F785460599 /* BhapticsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		86FA40F6295D576A0020ABC5 /* BhapticsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BhapticsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		86FA40F9295D576A0020ABC5 /* BhapticsSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhapticsSampleApp.swift; sourceTree = "<group>"; };
-		86FA40FB295D576A0020ABC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		86FA40FD295D576B0020ABC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		86FA40FF295D576B0020ABC5 /* BhapticsSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BhapticsSample.entitlements; sourceTree = "<group>"; };
-		86FA4101295D576B0020ABC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		86FA4051295A89D50020ABC5 /* BhapticsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BhapticsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86FA4054295A89D50020ABC5 /* BhapticsSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhapticsSampleApp.swift; sourceTree = "<group>"; };
+		86FA4056295A89D50020ABC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C0DE00010000000000000016 /* EventTransformControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTransformControl.swift; sourceTree = "<group>"; };
+		86FA4058295A89D60020ABC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86FA405A295A89D60020ABC5 /* BhapticsSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BhapticsSample.entitlements; sourceTree = "<group>"; };
+		86FA405C295A89D60020ABC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F35700ECF89129F785460599 /* BhapticsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BhapticsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		86FA40F3295D576A0020ABC5 /* Frameworks */ = {
+		86FA404E295A89D50020ABC5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86FA4114295EA4210020ABC5 /* Bhaptics in Frameworks */,
+				B1A0000000000000000000A3 /* Bhaptics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		86FA40ED295D576A0020ABC5 = {
+		86FA4048295A89D50020ABC5 = {
 			isa = PBXGroup;
 			children = (
-				86FA40F8295D576A0020ABC5 /* BhapticsSample */,
-				86FA40F7295D576A0020ABC5 /* Products */,
+				86FA4053295A89D50020ABC5 /* BhapticsSample */,
+				86FA4052295A89D50020ABC5 /* Products */,
+				86FA409C295ACED20020ABC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		86FA40F7295D576A0020ABC5 /* Products */ = {
+		86FA4052295A89D50020ABC5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				86FA40F6295D576A0020ABC5 /* BhapticsSample.app */,
+				86FA4051295A89D50020ABC5 /* BhapticsSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		86FA40F8295D576A0020ABC5 /* BhapticsSample */ = {
+		86FA4053295A89D50020ABC5 /* BhapticsSample */ = {
 			isa = PBXGroup;
 			children = (
-				86FA40F9295D576A0020ABC5 /* BhapticsSampleApp.swift */,
-				86FA40FB295D576A0020ABC5 /* ContentView.swift */,
-				86FA40FD295D576B0020ABC5 /* Assets.xcassets */,
-				86FA40FF295D576B0020ABC5 /* BhapticsSample.entitlements */,
-				86FA4100295D576B0020ABC5 /* Preview Content */,
+				86FA4054295A89D50020ABC5 /* BhapticsSampleApp.swift */,
+				86FA4056295A89D50020ABC5 /* ContentView.swift */,
+				C0DE00010000000000000016 /* EventTransformControl.swift */,
+				86FA4058295A89D60020ABC5 /* Assets.xcassets */,
+				86FA405A295A89D60020ABC5 /* BhapticsSample.entitlements */,
+				86FA405B295A89D60020ABC5 /* Preview Content */,
+				F35700B6A237EF0169250319 /* View */,
 			);
 			path = BhapticsSample;
 			sourceTree = "<group>";
 		};
-		86FA4100295D576B0020ABC5 /* Preview Content */ = {
+		86FA405B295A89D60020ABC5 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				86FA4101295D576B0020ABC5 /* Preview Assets.xcassets */,
+				86FA405C295A89D60020ABC5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		86FA409C295ACED20020ABC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F35700B6A237EF0169250319 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F35700ECF89129F785460599 /* BhapticsViewModel.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		86FA40F5295D576A0020ABC5 /* BhapticsSample */ = {
+		86FA4050295A89D50020ABC5 /* BhapticsSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 86FA4105295D576B0020ABC5 /* Build configuration list for PBXNativeTarget "BhapticsSample" */;
+			buildConfigurationList = 86FA4060295A89D60020ABC5 /* Build configuration list for PBXNativeTarget "BhapticsSample" */;
 			buildPhases = (
-				86FA40F2295D576A0020ABC5 /* Sources */,
-				86FA40F3295D576A0020ABC5 /* Frameworks */,
-				86FA40F4295D576A0020ABC5 /* Resources */,
+				86FA404D295A89D50020ABC5 /* Sources */,
+				86FA404E295A89D50020ABC5 /* Frameworks */,
+				86FA404F295A89D50020ABC5 /* Resources */,
+				B1A0000000000000000000A9 /* Re-sign bHaptics core library (macOS) */,
 			);
 			buildRules = (
 			);
@@ -88,28 +111,28 @@
 			);
 			name = BhapticsSample;
 			packageProductDependencies = (
-				86FA4113295EA4210020ABC5 /* Bhaptics */,
+				B1A0000000000000000000A2 /* Bhaptics */,
 			);
 			productName = BhapticsSample;
-			productReference = 86FA40F6295D576A0020ABC5 /* BhapticsSample.app */;
+			productReference = 86FA4051295A89D50020ABC5 /* BhapticsSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		86FA40EE295D576A0020ABC5 /* Project object */ = {
+		86FA4049295A89D50020ABC5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					86FA40F5295D576A0020ABC5 = {
+					86FA4050295A89D50020ABC5 = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
-			buildConfigurationList = 86FA40F1295D576A0020ABC5 /* Build configuration list for PBXProject "BhapticsSample" */;
+			buildConfigurationList = 86FA404C295A89D50020ABC5 /* Build configuration list for PBXProject "BhapticsSample" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,45 +140,65 @@
 				en,
 				Base,
 			);
-			mainGroup = 86FA40ED295D576A0020ABC5;
+			mainGroup = 86FA4048295A89D50020ABC5;
 			packageReferences = (
-				86FA4112295EA4210020ABC5 /* XCRemoteSwiftPackageReference "bhaptics-ios" */,
+				B1A0000000000000000000A1 /* XCLocalSwiftPackageReference "../.." */,
 			);
-			productRefGroup = 86FA40F7295D576A0020ABC5 /* Products */;
+			productRefGroup = 86FA4052295A89D50020ABC5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				86FA40F5295D576A0020ABC5 /* BhapticsSample */,
+				86FA4050295A89D50020ABC5 /* BhapticsSample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		86FA40F4295D576A0020ABC5 /* Resources */ = {
+		86FA404F295A89D50020ABC5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86FA4102295D576B0020ABC5 /* Preview Assets.xcassets in Resources */,
-				86FA40FE295D576B0020ABC5 /* Assets.xcassets in Resources */,
+				86FA405D295A89D60020ABC5 /* Preview Assets.xcassets in Resources */,
+				86FA4059295A89D60020ABC5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B1A0000000000000000000A9 /* Re-sign bHaptics core library (macOS) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Re-sign bHaptics core library (macOS)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\n# macOS only: BhapticsPlugin.framework nests libbhaptics_library.dylib signed by bHaptics.\n# Library validation (hardened runtime) rejects it in an app signed by another team,\n# and Xcode does not re-sign nested code, so re-sign it with this target's identity.\nif [ \"${PLATFORM_NAME}\" != \"macosx\" ] || [ -z \"${EXPANDED_CODE_SIGN_IDENTITY:-}\" ]; then exit 0; fi\nFW=\"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BhapticsPlugin.framework\"\nDYLIB=\"$FW/Versions/A/Frameworks/libbhaptics_library.dylib\"\n[ -f \"$DYLIB\" ] || exit 0\ncodesign --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" --options runtime --timestamp=none --preserve-metadata=identifier,entitlements,flags \"$DYLIB\"\ncodesign --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" --options runtime --timestamp=none --preserve-metadata=identifier,entitlements,flags \"$FW\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		86FA40F2295D576A0020ABC5 /* Sources */ = {
+		86FA404D295A89D50020ABC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86FA40FC295D576A0020ABC5 /* ContentView.swift in Sources */,
-				86FA40FA295D576A0020ABC5 /* BhapticsSampleApp.swift in Sources */,
+				86FA4057295A89D50020ABC5 /* ContentView.swift in Sources */,
+				C0DE00010000000000000015 /* EventTransformControl.swift in Sources */,
+				86FA4055295A89D50020ABC5 /* BhapticsSampleApp.swift in Sources */,
+				F3570FF4F8175E78D3FADE73 /* BhapticsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		86FA4103295D576B0020ABC5 /* Debug */ = {
+		86FA405E295A89D60020ABC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -213,7 +256,7 @@
 			};
 			name = Debug;
 		};
-		86FA4104295D576B0020ABC5 /* Release */ = {
+		86FA405F295A89D60020ABC5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -264,7 +307,7 @@
 			};
 			name = Release;
 		};
-		86FA4106295D576B0020ABC5 /* Debug */ = {
+		86FA4061295A89D60020ABC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -273,11 +316,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BhapticsSample/Preview Content\"";
-				DEVELOPMENT_TEAM = 567W88F7JD;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = bHaptics;
-				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = bhaptics;
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = bhaptics;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -288,22 +331,23 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.sample.BhapticsSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Debug;
 		};
-		86FA4107295D576B0020ABC5 /* Release */ = {
+		86FA4062295A89D60020ABC5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -312,11 +356,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BhapticsSample/Preview Content\"";
-				DEVELOPMENT_TEAM = 567W88F7JD;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = bHaptics;
-				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = bhaptics;
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = bhaptics;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -327,62 +371,58 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.sample.BhapticsSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		86FA40F1295D576A0020ABC5 /* Build configuration list for PBXProject "BhapticsSample" */ = {
+		86FA404C295A89D50020ABC5 /* Build configuration list for PBXProject "BhapticsSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86FA4103295D576B0020ABC5 /* Debug */,
-				86FA4104295D576B0020ABC5 /* Release */,
+				86FA405E295A89D60020ABC5 /* Debug */,
+				86FA405F295A89D60020ABC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		86FA4105295D576B0020ABC5 /* Build configuration list for PBXNativeTarget "BhapticsSample" */ = {
+		86FA4060295A89D60020ABC5 /* Build configuration list for PBXNativeTarget "BhapticsSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86FA4106295D576B0020ABC5 /* Debug */,
-				86FA4107295D576B0020ABC5 /* Release */,
+				86FA4061295A89D60020ABC5 /* Debug */,
+				86FA4062295A89D60020ABC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		86FA4112295EA4210020ABC5 /* XCRemoteSwiftPackageReference "bhaptics-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bhaptics/bhaptics-ios.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		B1A0000000000000000000A1 /* XCLocalSwiftPackageReference "../.." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../..;
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		86FA4113295EA4210020ABC5 /* Bhaptics */ = {
+		B1A0000000000000000000A2 /* Bhaptics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 86FA4112295EA4210020ABC5 /* XCRemoteSwiftPackageReference "bhaptics-ios" */;
 			productName = Bhaptics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 86FA40EE295D576A0020ABC5 /* Project object */;
+	rootObject = 86FA4049295A89D50020ABC5 /* Project object */;
 }
