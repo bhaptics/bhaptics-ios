@@ -103,6 +103,7 @@
 				86FA404D295A89D50020ABC5 /* Sources */,
 				86FA404E295A89D50020ABC5 /* Frameworks */,
 				86FA404F295A89D50020ABC5 /* Resources */,
+				B1A0000000000000000000A9 /* Re-sign bHaptics core library (macOS) */,
 			);
 			buildRules = (
 			);
@@ -163,6 +164,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B1A0000000000000000000A9 /* Re-sign bHaptics core library (macOS) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Re-sign bHaptics core library (macOS)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\n# macOS only: BhapticsPlugin.framework nests libbhaptics_library.dylib signed by bHaptics.\n# Library validation (hardened runtime) rejects it in an app signed by another team,\n# and Xcode does not re-sign nested code, so re-sign it with this target's identity.\nif [ \"${PLATFORM_NAME}\" != \"macosx\" ] || [ -z \"${EXPANDED_CODE_SIGN_IDENTITY:-}\" ]; then exit 0; fi\nFW=\"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BhapticsPlugin.framework\"\nDYLIB=\"$FW/Versions/A/Frameworks/libbhaptics_library.dylib\"\n[ -f \"$DYLIB\" ] || exit 0\ncodesign --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" --options runtime --timestamp=none --preserve-metadata=identifier,entitlements,flags \"$DYLIB\"\ncodesign --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" --options runtime --timestamp=none --preserve-metadata=identifier,entitlements,flags \"$FW\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		86FA404D295A89D50020ABC5 /* Sources */ = {
