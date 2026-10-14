@@ -25,7 +25,7 @@ Or add it to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/bhaptics/bhaptics-ios", from: "1.0.0")
+    .package(url: "https://github.com/bhaptics/bhaptics-ios", from: "1.0.1")
 ]
 ```
 
@@ -46,19 +46,9 @@ The SDK talks to bHaptics devices over Bluetooth LE, so add [NSBluetoothAlwaysUs
 * The SDK does not use Bluetooth on macOS. Devices are driven through bHaptics Player, so install and run it; `BhapticsKit.initialize` connects to the local Player automatically.
 * If the app is sandboxed, check **Outgoing Connections (Client)** under Signing & Capabilities > App Sandbox. No Bluetooth entitlement or usage description is needed.
 
-#### Code signing
+#### Upgrading from 1.0.0
 
-The macOS slice nests `libbhaptics_library.dylib`, signed by bHaptics. With the Hardened Runtime (on by default) library validation only accepts libraries signed by your own team, and Xcode does not re-sign nested code when it embeds the framework, so a development build signed by another team crashes at launch with `Library not loaded: @rpath/libbhaptics_library.dylib`. Add a Run Script phase after Embed Frameworks that re-signs it with your identity (the sample app includes this phase):
-
-```sh
-if [ "${PLATFORM_NAME}" = "macosx" ] && [ -n "${EXPANDED_CODE_SIGN_IDENTITY:-}" ]; then
-  FW="${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BhapticsPlugin.framework"
-  codesign --force --sign "${EXPANDED_CODE_SIGN_IDENTITY}" --options runtime --timestamp=none --preserve-metadata=identifier,entitlements,flags "$FW/Versions/A/Frameworks/libbhaptics_library.dylib"
-  codesign --force --sign "${EXPANDED_CODE_SIGN_IDENTITY}" --options runtime --timestamp=none --preserve-metadata=identifier,entitlements,flags "$FW"
-fi
-```
-
-Xcode re-signs all nested code when you archive and export, so distribution builds do not need anything else. "Sign to Run Locally" (ad-hoc) cannot load the library at all under the Hardened Runtime; use a development team, or disable the Hardened Runtime for local runs.
+1.0.0 nested a separately signed core library in the macOS slice and needed a Run Script phase to re-sign it. From 1.0.1 the core library is linked into `BhapticsPlugin.framework` itself, so Embed & Sign covers it — remove that Run Script phase.
 
 ## Quick start
 
@@ -110,4 +100,4 @@ extension MyViewModel: BhapticsKitDelegate {
 
 Use of the bHaptics SDK is subject to the [bHaptics SDK agreement](https://bhaptics.gitbook.io/license-sdk/). See [LICENSE](LICENSE).
 
-The macOS slice embeds `libbhaptics_library.dylib`, which contains open-source components. Their licenses are listed in [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt). When you ship an app that includes this framework, include that file and ship the framework unmodified; it stays under the bHaptics SDK agreement, not your app's license.
+The macOS slice links the bHaptics core library, which contains open-source components. Their licenses are listed in [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt). When you ship an app that includes this framework, include that file and ship the framework unmodified; it stays under the bHaptics SDK agreement, not your app's license.
