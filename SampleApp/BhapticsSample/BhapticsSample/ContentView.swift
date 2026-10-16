@@ -169,6 +169,7 @@ struct ContentView: View {
                 if position == .GloveL || position == .GloveR {
                     VStack(alignment: .leading, spacing: 10) {
                         valueSlider("Shape", value: $gloveShape, range: 0...2, suffix: "")
+                            .disabled(glovePlayTime == 1)
                         HStack {
                             Text("PlayTime")
                             Spacer()
@@ -185,18 +186,18 @@ struct ContentView: View {
                         valueSlider("RepeatCount", value: $gloveRepeat, range: 0...255, suffix: " (\(max(gloveRepeatCount, 1) * 40) ms)")
 
                         Button("Waveform 0–5") {
-                            requestID = viewModel.playGloveAll(position: position, intensity: Int(intensity), shape: Int(gloveShape), playTime: Int(glovePlayTime), frequency: Int(gloveFrequency), repeatCount: gloveRepeatCount)
+                            requestID = viewModel.playGloveAll(position: position, intensity: Int(intensity), shape: gloveShapeValue, playTime: Int(glovePlayTime), frequency: Int(gloveFrequency), repeatCount: gloveRepeatCount)
                         }
                         .buttonStyle(.borderedProminent)
 
                         HStack(spacing: 10) {
                             Button("DK3 All 8") {
-                                requestID = viewModel.playGloveDk3(position: position, intensities: Array(repeating: Int(intensity), count: motorCount), shape: Int(gloveShape), playTime: Int(glovePlayTime), frequency: Int(gloveFrequency), repeatCount: gloveRepeatCount)
+                                requestID = viewModel.playGloveDk3(position: position, intensities: Array(repeating: Int(intensity), count: motorCount), shape: gloveShapeValue, playTime: Int(glovePlayTime), frequency: Int(gloveFrequency), repeatCount: gloveRepeatCount)
                             }
                             Button("DK3 Palm 7·8") {
                                 var intensities = Array(repeating: 0, count: motorCount)
                                 for index in 6..<motorCount { intensities[index] = Int(intensity) }
-                                requestID = viewModel.playGloveDk3(position: position, intensities: intensities, shape: Int(gloveShape), playTime: Int(glovePlayTime), frequency: Int(gloveFrequency), repeatCount: gloveRepeatCount)
+                                requestID = viewModel.playGloveDk3(position: position, intensities: intensities, shape: gloveShapeValue, playTime: Int(glovePlayTime), frequency: Int(gloveFrequency), repeatCount: gloveRepeatCount)
                             }
                         }
                         .buttonStyle(.bordered)
@@ -446,6 +447,7 @@ struct ContentView: View {
 
     private var motorCount: Int { BhapticsViewModel.motorCount(for: position) }
     private var gloveRepeatCount: Int { Int(gloveRepeat) }
+    private var gloveShapeValue: Int { glovePlayTime == 1 ? 0 : Int(gloveShape) }
     private var isCompact: Bool { horizontalSizeClass == .compact }
     private var twoColumns: [GridItem] { Array(repeating: GridItem(.flexible(), spacing: 10), count: 2) }
     private var emptyDeviceMessage: String {
